@@ -1,14 +1,17 @@
 pipeline {
     agent any 
     stages {
+        stage ('Get Env Variables') {
+            sh 'printenv'
+        }
         stage('Git Version') { 
-            steps 'git version'
+            sh 'git version'
         }
         stage('Docker Version') { 
-            steps 'docker -v'
+            sh 'docker -v'
         }
         stage('Maven version') { 
-            steps 'mvn version'
+            sh 'mvn version'
         }
     }
 }
