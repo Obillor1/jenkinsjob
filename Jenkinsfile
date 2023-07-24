@@ -5,7 +5,7 @@ pipeline {
             sh 'git version'
         }
         stage('Docker Version') { 
-            sh 'docker -version
+            sh 'docker -version'
         }
         stage('Maven version') { 
             sh 'mvn version'
