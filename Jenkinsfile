@@ -8,7 +8,7 @@ pipeline {
             sh 'docker -version
         }
         stage('Maven version') { 
-            sh 'mvn -v'
+            sh 'mvn version'
         }
     }
 }
