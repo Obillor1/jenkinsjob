@@ -2,13 +2,13 @@ pipeline {
     agent any 
     stages {
         stage('Git Version') { 
-            sh 'git version'
+            steps 'git version'
         }
         stage('Docker Version') { 
-            sh 'docker -v'
+            steps 'docker -v'
         }
         stage('Maven version') { 
-            sh 'mvn version'
+            steps 'mvn version'
         }
     }
 }
