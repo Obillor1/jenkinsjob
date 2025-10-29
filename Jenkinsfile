@@ -1,3 +1,4 @@
+#defined for and index.html file
 pipeline {
     agent any 
     stages {
